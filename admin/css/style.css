@@ -1,0 +1,287 @@
+/* body initials */
+html {
+
+}
+
+/* set up initials for body */
+body {
+/* background-image:url(https://img.freepik.com/free-vector/video-surveillance-security-cameras-realistic-composition-black-white-cameras-form-circle-illustration_1284-61014.jpg?w=2000); */
+background-size:cover;
+background-position: center;
+font-family: 'Roboto', sans-serif;
+
+}
+
+/* We make every box as border-box */
+* {
+    box-sizing:border-box;
+}
+
+h1 {
+  font-size:46px;
+  font-weight:bolder;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+/* We make every box as */
+.container {
+    width:90%;
+    margin:0 auto;
+    border:1px solid black;
+    height:400px;
+}
+
+
+
+  /* Clear floats after the columns */
+ 
+  .row {
+    display:flex;
+  }
+
+  nav ul li { 
+    display:inline-block;
+    font-size: larger;
+    font-weight: 200;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+
+  /* Setting up col width upto 4 col layout */
+
+  .col-2 {
+    width:50%;
+  }
+  .col-3 {
+    width:33.3%;
+  }
+  .col-4 {
+    width:25%;
+  }
+  .col {
+    width:100%;
+  }
+
+  /* Text aligning classes */
+  .right {
+    text-align:right;
+  }
+  .left {
+    text-align:left;
+  }
+  .center {
+    text-align:center;
+  }
+  .box-gutter{
+    column-gap: 10px;
+  }
+
+  /* Setting maximum width of image */
+  img {
+    max-width:100%;
+    max-height:100%;
+    min-width:100%;
+    min-height:100%;
+  }
+  .width-75 {
+    flex:0 0 75%;
+  }
+.sidebar {
+  width: 25%;
+ background: rgba(0, 0, 0, 0.695);
+  padding-top: 32px;
+  color: grey;
+  box-shadow: 0 12px 30px rgb(46 60 83 / 14%);
+  position:relative;
+}
+
+h2,h1,th {
+  font-family: 'Oswald', sans-serif;
+}
+.sidebar .outer-sidebar {
+  margin-top: 50px;
+}
+.sidebar .outer-sidebar > li i {
+  float: right;
+    font-size: 23px;
+    padding-right: 12px;
+    color: rgb(141, 138, 132);
+}
+.sidebar h2{
+  padding-left:32px;
+  font-size:30px;
+}
+.sidebar .outer-sidebar > li:last-child {
+  border-bottom:none;
+}
+
+.sidebar .outer-sidebar > li {
+  background: whitesmoke;
+  padding-top: 12px;
+  padding-bottom:12px;
+  border-bottom:1px solid wheat;
+  padding-left:32px;
+}
+
+.sidebar .inner-sidebar {
+  margin-top: 14px;
+  display:none;
+}
+.fa-caret-down ~ .inner-sidebar {
+  display:block;
+}
+.fa-caret-right ~ .inner-sidebar {
+  display:none;
+}
+
+.sidebar .inner-sidebar > li {
+  background: whitesmoke;
+  padding-top: 12px;
+  padding-bottom:12px;
+
+  border-bottom:1px solid rgb(232, 224, 211);
+  padding-left:20px;
+}
+.sidebar .inner-sidebar > li:last-child { 
+  border-bottom:none;
+}
+
+
+.full-area {
+  min-height: 100vh;
+}
+.content-area {
+  flex-grow: 1;
+  padding-left: 32px;
+  padding-top: 32px;
+
+}
+.sidebar ul li a {
+  display:inline-block;
+  color:#787171;
+  font-size:17px;
+  margin-bottom:12px;
+  letter-spacing:1.3px;
+  text-decoration:none;
+}
+.content-area h2 {
+  margin-bottom:52px;
+}
+table {
+  width: 100%;
+}
+table th,td {
+  height:41px;
+}
+table,  td {
+  border-collapse: collapse;
+  text-align:center;
+}
+.inner-main {
+  width:90%;
+}
+table th {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight:bolder;
+  height:46px;
+  text-align:center;
+  font-weight:normal
+}
+table thead tr {
+  background: #e2dfe5;
+  color: #0f0d0d;
+}
+.btn {
+  padding: 10px 36px;
+  background: #a9a9be4d;
+  color: white;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  float: right;
+  margin-bottom: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  color: #353333;
+}
+.table {
+  display:table;
+}
+.table .tr {
+  display:table-row;
+  
+}
+.table .tr .cell {
+  display:table-cell;
+  padding-right:10px;
+  padding-bottom:35px;
+  vertical-align: top;
+  line-height:12px;
+}
+input[type="text"],input[type="password"] {
+  height: 33px;
+  border: 1px solid #ddd6d6;
+  box-shadow: 2px 2px 8px rgb(0,0,0,0.9);
+  width:100%;
+}
+textarea {
+  box-shadow: 2px 2px 8px rgb(0,0,0,0.9);
+  width:100%;
+  height:150px;
+}
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+.error {
+  color:white;
+  background:red;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-left:8px;
+  font-weight:bold;
+
+}
+
+.success {
+  color:white;
+  background:green;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-left:8px;
+  font-weight:bold;
+  opacity:0.7
+
+}
+.img-normal {
+  min-height:0;
+  min-width:0;
+}
+.logout {
+  width: 110px;
+  background: black;
+  color: white;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 63px;
+  border-radius:8px;
+}
+.logout a {
+  text-decoration: none;
+  /* padding-bottom: 61px; */
+  color: white;
+}

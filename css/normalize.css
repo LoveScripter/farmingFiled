@@ -1,0 +1,47 @@
+html {
+    line-height: 1.15;
+  }
+
+/* remove margins across all browsers */
+body {
+    margin:0;
+}
+
+/* set Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+  margin:0;
+  
+}
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+ button,
+ input,
+ select,
+ textarea {
+   font-family: inherit; /* 1 */
+   font-size: 100%; /* 1 */
+   line-height: 1.15; /* 1 */
+   margin: 0; /* 2 */
+ }
+ 
+ /* UL ol */
+ ol, ul {
+	list-style: none;
+    margin:0;
+    padding:0;
+}
+
+
+/* border collapse for td and table */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
